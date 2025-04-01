@@ -40,7 +40,7 @@ function App() {
         <div className="w-full max-w-md">
           <div className="bg-slate-700/50 backdrop-blur-sm rounded-xl shadow-lg border border-slate-600/30 p-4">
             <h1 className="text-xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Manage Your Todos
+              Tasks To Perform
             </h1>
             <div className="mb-4">
               <TodoForm />
