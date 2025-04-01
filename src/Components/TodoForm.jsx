@@ -13,7 +13,7 @@ function TodoForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex gap-2 w-full">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full">
             <input
                 type="text"
                 placeholder="Write Todo..."
@@ -23,11 +23,10 @@ function TodoForm() {
             />
             <button 
                 type="submit" 
-                className="px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium text-sm whitespace-nowrap"
+                className="sm:w-auto w-full px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium text-sm whitespace-nowrap"
             >
                 Add
             </button>
-            
         </form>
     )
 }
