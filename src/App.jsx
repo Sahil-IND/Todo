@@ -36,17 +36,17 @@ function App() {
 
   return (
     <TodoProvider value={{ todos, addTodo, deleteTodo, updateTodo, toggleComplete }}>
-      <div className="bg-gradient-to-br from-slate-800 to-slate-900 min-h-screen py-8 transition-colors duration-300 flex items-center justify-center">
-        <div className="w-full max-w-2xl mx-4">
+      <div className="bg-gradient-to-br from-slate-800 to-slate-900 min-h-screen py-8 transition-colors duration-300 flex items-start md:items-center justify-center px-4">
+        <div className="w-full max-w-2xl">
           <div className="bg-slate-700/50 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden border border-slate-600/30 transition-all duration-300 hover:shadow-slate-600/20">
-            <div className="p-6">
-              <h1 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <div className="p-4 md:p-6">
+              <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                 Manage Your Todos
               </h1>
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <TodoForm />
               </div>
-              <div className="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+              <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
                 {todos.map((todo) => (
                   <div key={todo.id} className="w-full transition-all duration-200 hover:scale-[1.01]">
                     <TodoItem todo={todo} />
